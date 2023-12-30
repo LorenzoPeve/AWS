@@ -1,7 +1,7 @@
 from socket import *
 
-SERVER_IP = '3.144.236.101'
-SERVER_PORT = 12000
+SERVER_IP = '3.144.236.101' # Your EC2 instance public IP address
+SERVER_PORT = 12000 # The port where server is listening
 
 clientSocket = socket(AF_INET, SOCK_STREAM)
 clientSocket.connect((SERVER_IP, SERVER_PORT))
